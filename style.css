@@ -1,0 +1,29 @@
+/* Estilo general de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Para que los bordes no se vean dobles */
+    font-family: Arial, sans-serif
+}
+
+/* Colorear el encabezado */
+th {
+    background-color: #9c9e9c; /* Gris */
+    color: white;              /* Texto blanco */
+    padding: 12px;
+}
+
+/* Colorear las celdas de datos */
+td {
+    border: 1px solid #0c0404;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Color titulo */
+h1{
+    color: #3579e0;
+}
+
+h2{
+    color: yellowgreen;
+}
