@@ -1,29 +1,85 @@
-/* Estilo general de la tabla */
-table {
-    width: 100%;
-    border-collapse: collapse; /* Para que los bordes no se vean dobles */
-    font-family: Arial, sans-serif
+/* Configuración General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
-/* Colorear el encabezado */
-th {
-    background-color: #9c9e9c; /* Gris */
-    color: white;              /* Texto blanco */
-    padding: 12px;
+/* Título estilo Pokédex */
+h1 {
+    color: #e3350d; /* Rojo clásico de la Pokéball */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 4px solid #313131;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-/* Colorear las celdas de datos */
-td {
-    border: 1px solid #0c0404;
-    padding: 8px;
+/* Estilo de la Tabla */
+.dataframe {
+    width: 90%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border: 3px solid #313131;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Encabezados */
+.dataframe thead {
+    background-color: #313131;
+    color: #ffffff;
+}
+
+.dataframe th {
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    border: none;
+}
+
+/* Celdas */
+.dataframe td {
+    padding: 12px 15px;
     text-align: center;
+    border-bottom: 1px solid #ddd;
 }
 
-/* Color titulo */
-h1{
-    color: #3579e0;
+/* Filas alternas para mejor lectura */
+.dataframe tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
-h2{
-    color: yellowgreen;
+/* Efecto Hover (resaltado al pasar el ratón) */
+.dataframe tbody tr:hover {
+    background-color: #ffeeee;
+    cursor: default;
+    transition: background-color 0.3s ease;
+}
+
+/* Resalte especial para el "Poder Total" o ID */
+.dataframe td:first-child {
+    font-weight: bold;
+    color: #1b53ba; /* Azul tipo agua/información */
+}
+
+.dataframe td:last-child {
+    font-weight: bold;
+    color: #e3350d;
+    background-color: #fffafa;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; 
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
 }
